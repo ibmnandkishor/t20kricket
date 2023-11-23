@@ -6,8 +6,7 @@ from Mypackage import dataset, helper
 from PIL import Image
 import base64
 
-if st.sidebar.button("click here"):
-    st.title(" T20 analysis")
+
 def add_bg_from_local(image_file):
     with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
